@@ -952,3 +952,47 @@ Journal of Renewable and Sustainable Energy, 10(6), 647-656.
 Smart Cities" (2021).
 
 SYSTEM CODE
+
+'''
+
+// include the library code:
+#include <LiquidCrystal.h>
+
+// initialize the library by associating any needed LCD interface pin
+// with the arduino pin number it is connected to
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+ int led_pin_7 = 7;
+
+
+void setup() {
+    // set up the LCD's number of columns and rows:
+  lcd.begin(16, 2);
+  // Print a message to the LCD.
+  lcd.setCursor(0,0);
+  lcd.print("STREET LIGHT OFF");
+  lcd.setCursor(1,1);
+  lcd.print("STREET LIGHT ON");
+  delay(1000);
+  lcd.clear();
+  Serial.begin(9600);
+
+  pinMode(led_pin_7, OUTPUT);
+}
+void loop() {
+  int a=analogRead(A0);
+  Serial.println(a);
+
+  if (a < 220) {
+    lcd.setCursor(0, 1);  // Move to second row
+    lcd.print("Low light"); // Display "Low light"
+    digitalWrite(led_Pin_7, HIGH);  // Turn on the light
+    delay(1000);
+  } else {
+    lcd.setCursor(0, 1);  // Move to second row
+    lcd.print("Normal light"); // Display "Normal light"
+    digitalWrite(led_Pin_7, LOW);  // Turn off the light
+    delay(1000);
+  }
+  '''
