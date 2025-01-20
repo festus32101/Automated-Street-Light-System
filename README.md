@@ -1,18 +1,28 @@
 # Automated-Street-Light-System
-DESIGN AND SIMULATION OF AUTOMATIC STREET LIGHT
-SYSTEM USING ARDUINO
+DESIGN AND SIMULATION OF AUTOMATIC STREET LIGHT SYSTEM USING ARDUINO
+
 FIRST SEMESTER 200LEVEL ROBOTICS PROJECT
+
 FIRST SEMESTER 200LEVEL PROJECT PROPOSAL
+
 SUBMITTED TO BELLS UNIVERSITY
+
 BY
+
 IGUOBA VICTOR ESHIOLAI
+
 WITH MATRIC NUMBER
+
 2023/12106
+
 BELLS UNIVERSITY OF TECHNOLOGY (BUT)
+
 DEPARTMENT OF COMPUTER ENGINEERING
-JANURARY 2025
-1
-DECLARATION
+
+1st JANURARY 2025
+
+## DECLARATION
+
 I hereby declare that this is my own original work of the project design
 reflecting the knowledge acquired from research on my first semester
 200level project about “Design and Simulated of the Automatic Street
@@ -20,18 +30,28 @@ Light using Arduino and Proteus”. I therefore declare that the information
 in this report is original and has never been submitted to any other
 institution, university or college except Bells University of Technology,
 Ota, Department of Computer Engineering.
+
 Name:
+
 Signature:
+
 Date:
-APPROVAL
+
+## APPROVAL
+
 I have read and hereby recommended this 1st semester 200 level project
 design titled “Design and Simulation of Automatic Street Light System
 Using Arduino and Proteus” acceptance of Bells University of
 Technology.
+
 ……………………………………………………….
+
 Mr. Ayuba Muhammad
+
 Lecturer
-ACKNOWLEDGEMENT
+
+## ACKNOWLEDGEMENT
+
 I would like to thank my project supervisor Mr. Ayuba Muhammad for his
 enormous co-operation and guidance.
 I have no words to express my gratitude for a person who wholeheartedly
@@ -39,66 +59,112 @@ supported the project and gave freely of his valuable time while making
 the project. The technical guidance provided by him was more than useful
 and made the project successful. I would like to thank my colleagues for
 their little help and guidance while working on the project.
-Dedication
+
+## Dedication
+
 I dedicate this project to firstly God almighty for his protection and
 guidance and for the gift of life. Because without God, I don’t really think
 I would have made it this far. I’d also like to thank Mr. and Mrs. Iguoba
 and also my sister who gave me the reason to always work harder and for
 their love towards me that keeps me pushing.
-TABLE OF CONTENT
+
+## TABLE OF CONTENT
+
 DECLARATION
+
 APPROVAL
+
 ACKNOWLEDGEMENT
+
 DEDICATION
+
 LIST OF FIGURE
+
 ABSTRACT
+
 CHAPTER ONE
+
 1.0 INTRODUCTION
+
 1.1 Background of the study
+
 1.2 Problem Statement
+
 1.3 Objective of the Study
+
 1.3.1 Main Objective
+
 1.3.2 Specific Objective
+
 1.4 Research Question
+
 1.5 Significance of the Study
+
 1.6 Scope of the Study
+
 CHAPTER TWO: LITERATURE REVIEW
+
 2.0 Introduction
+
 2.1 Light Dependent Resistor (LDR)
+
 2.2 BASIC WORKING PRINCIPLES
+
 2.3 APPLICATION OF LDRs
+
 2.4 ADVANTAGES AND LIMITATION
+
 CHAPTER THREE: METHODOLOGY
+
 3.1 SYSTEM COMONENTS
+
 3.2 DESIGN OF THE SYSTEM
+
 3.3 C++ SCTIPTING LANGUAGE
+
 3.4 WORKING OF THE SYSTEM
+
 CHAPTER FOUR: RESULT OF THE SYSTEM
+
 4.0 SUCCESSFUL CODE AND SIMULATION
+
 4.1 THE LCD DISPLAY
+
 4.2 CONNECTION AND INSTALLATION
+
 4.3 FINAL INSTALLATION SYSTEM
+
 4.4 INSTALLATION DIAGRAM
+
 4.5 READINESS FOR USE
+
 CHAPTER FIVE: CONCLUSION
+
 REFERENCE
-LIST OF FIGURES
+
+## LIST OF FIGURES
+
 Figure 1: LDR (Light Dependent Resistor)
-FIGURE 2: CIRCUIT DIAGRAM OF THE AUTOMATED STREET
-LIGHT SYSTEM
+
+FIGURE 2: CIRCUIT DIAGRAM OF THE AUTOMATED STREET LIGHT SYSTEM
+
 FIGURE 3: THE ARDUINO UNO BOARD
-FIGURE 4: LCD DISPLAY FIGURE 5: LIGHT EMITTING DIODE
-(LED)
+
+FIGURE 4: LCD DISPLAY FIGURE 5: LIGHT EMITTING DIODE (LED)
+
 FIGURE 5: LIGHT EMITTING DIODE (LED)
+
 FIGURE 6: A RESISTOR
+
 FIGURE 7: VSOURCE
+
 FIGURE 8: THE SCRIPT FOR THE MICROCONTROLLER
-CHAPTER ONE
-1.0 INTRODUCTION
-In a society where labor has become so expensive the government and
-individuals use this system to cut costs. Ensuring the area is well lit up
-especially at night to reduce the rate of crimes at night. So, focusing on
-the automatic street light system is very important thereby creating a welllit environment to aid the security of society. Even with the use of the
+
+## CHAPTER ONE
+
+### 1.0 INTRODUCTION
+
+In a society where labor has become so expensive the government and individuals use this system to cut costs. Ensuring the area is well lit up especially at night to reduce the rate of crimes at night. So, focusing on the automatic street light system is very important thereby creating a welllit environment to aid the security of society. Even with the use of the
 normal streetlight if there were to be someone to be on a shift, he/she
 might miss the time to turn it ON/OFF thereby wasting energy. Street
 lighting represents an important component in terms of safety, better
@@ -951,9 +1017,9 @@ Journal of Renewable and Sustainable Energy, 10(6), 647-656.
 11. International Energy Agency (IEA) - "Energy-Efficient Lighting for
 Smart Cities" (2021).
 
-SYSTEM CODE
+*SYSTEM CODE*
 
-'''
+```
 
 // include the library code:
 #include <LiquidCrystal.h>
@@ -995,4 +1061,4 @@ void loop() {
     digitalWrite(led_Pin_7, LOW);  // Turn off the light
     delay(1000);
   }
-  '''
+  ```
